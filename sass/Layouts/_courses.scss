@@ -1,0 +1,62 @@
+.courses{
+    margin-top: 40px;
+    margin-bottom: 30px;
+    .courses__content{
+        .text-content{
+            p:first-child{
+                @include styleText($color-black-0,19px,$fw-bold-1);
+            }
+            background-color: $color-gray-5;
+            @include centerByFlex();
+            
+        }
+        .slide-content{
+            .nav-item{
+                position: relative;
+            }
+            .nav-link:focus.nav-link::after{
+                content: '';
+                height: 4px;
+                background-color: $color-blue;
+                display: block;
+                width: 100%;
+                position: absolute;
+                bottom:0px;
+                left: 0px;
+            }
+            
+            .nav-item{
+                font-size: 14px;
+                width: 14%;
+                @include centerByFlex();
+                .nav-link{
+                    @include deleteBorder();
+                }
+                a{
+                    text-decoration: none;
+                    color: $color-black-0;
+                    &:hover{
+                        @include deleteBorder();
+                    }
+                    &:focus{
+                        @include deleteBorder();
+                    }
+                }
+            }
+        }
+    }  
+}
+@include responsive ('large'){
+    .courses{
+        .container{
+            max-width: 90%;
+        }
+    }
+}
+@include responsive ('medium'){
+    .courses{
+        .container{
+            max-width: 100%;
+        }
+    }
+}

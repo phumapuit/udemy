@@ -1,0 +1,51 @@
+.services{
+    background-color: #F7F8FA;
+    padding: 24px 0;
+    .services__content{
+        .item{
+            background-color: $color-white-0;
+            padding: 20px;
+            margin-right: 10px;
+            
+            min-height: 160px ;
+            .services__item{
+                span{
+                    padding: 0;
+                }
+                i{
+                    font-size: 50px;
+                    color: blue;
+                    
+                }
+                .services__text{
+                    b{
+                        @include styleText($color-black-0,18px,$fw-bold-1);
+                    }
+                }
+            }
+        }
+        .slick-arrow{
+            display: none !important;
+        }
+    }
+}
+@include responsive('large'){
+    .services{
+        .services__content .item{
+            padding: 10px;
+            max-height: 160px ;
+        }
+        .services__item{
+            text-align: center;
+            .services__text{
+                b{
+                    font-size: 16px;
+                }
+                p{
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+    
+}

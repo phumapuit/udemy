@@ -1,0 +1,1987 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Udemy</title>
+
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+
+    <!-- FONT GOOGLE -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+
+    <!-- BS4 css -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <!-- SLICK -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+    <!-- main css -->
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+    <div class="top-color"></div>
+    <header>
+      <!-- md: 768px -->
+        <nav class="navbar navbar-expand-md">
+          <div class="col-2 d-md-none">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <i class="fa fa-bars"></i>
+            </button>
+          </div>
+            <div class="col-8 col-md-8 col-xl-7">
+                <div class="header__left">
+                 
+                    <a class="navbar-brand" href="#">
+                        <img src="./img/logo-coral.svg" alt="">
+                    </a>
+                    <span class="header__categories">
+                        <i class="fa fa-th"></i>
+                        Categories
+                    </span>
+                    <form class="header__form">
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="Search for anything" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                            <div class="input-group-append">
+                              <span class="input-group-text" id="basic-addon2">
+                                <i class="fa fa-search"></i>
+                              </span>
+                            </div>
+                          </div>
+                    </form>
+                </div>
+            </div>
+            <div class="col-2 col-md-4  col-xl-5">
+                <div class="header__right">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item business">
+                          <a class="nav-link" href="#">Udemy for business</a>
+                        </li>
+                        <li class="nav-item teach">
+                          <a class="nav-link" href="#">
+                              Teach on Udemy
+                          </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <i class="fa fa-shopping-cart"></i>
+                            </a>
+                          </li>  
+                          <li class="nav-item udebtn-group">
+                                <button class="udebtn-white">Log In</button>
+                                <button class="udebtn-red">Sign Up</button>
+                          </li>                     
+                      </ul>
+                </div>
+            </div>
+            
+            
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">             
+            </div>
+            
+          </nav>
+    </header>
+    <section class="udemyCarousel">
+      <div class="udemyCarousel__content container">
+        <div class="udemyCarousel__text">
+          <h2>Learn on your schedule</h2>
+          <p>Study any topic, anytime. Choose from thousands of expert-led courses now.</p>
+          <div class="udemyCarousel__search">
+            <input class="udeinp-default" type="text" placeholder="What do you want to learn?">
+            <span><i class="fa fa-search"></i></span>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="intro d-none d-md-block">
+      <div class="intro__content container">
+        <div class="intro__item">
+          <span><i class="fa fa-dot-circle d-none d-xl-inline"></i></span>
+          <div class="intro__text d-inline-block">
+            <b>100,000 online courses</b>
+            <p>Explore a variety off fresh topics</p>
+          </div>
+        </div>
+        <div class="intro__item d-inline-block">
+          <span><i class="fa fa-comment d-none d-xl-inline"></i></span>
+          <div class="intro__text d-inline-block">
+            <b>Expert instruction</b>
+            <p>Find the right instructor for you</p>
+          </div>
+        </div>
+        <div class="intro__item d-inline-block">
+          <span><i class="fa fa-clock d-none d-xl-inline"></i></span>
+          <div class="intro__text d-inline-block">
+            <b>Lifetime access</b>
+            <p>Learn on your schedule</p>
+          </div>
+        </div>
+      </div>
+      
+    </section>
+    <section class="courses">
+      <div class="courses__content container">
+        <div class="row">
+          <div class="text-content d-none d-lg-flex col-lg-3 col-xl-4">
+            <div>
+              <p>The world’s largest selection of courses</p>
+              <p>Choose from over 100,000 online video courses with new additions published every month</p>
+            </div>
+          </div>
+          <div class="slide-content col-12 col-lg-9 col-xl-8">
+            <ul class="nav nav-tabs">
+              <li class="nav-item">
+                <a class="nav-link active" data-toggle="tab" href="#bus">Business</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-toggle="tab" href="#des">Design</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-toggle="tab" href="#pho">Photography</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-toggle="tab" href="#dev">Development</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-toggle="tab" href="#mar">Marketing</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-toggle="tab" href="#its">IT & Software</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-toggle="tab" href="#pdev">Personal Development</a>
+              </li>
+            </ul>
+            
+            <!-- Tab panes -->
+            <div class="tab-content carousel__item">
+              <div class="tab-pane container active multiple-items" id="bus">
+                <div class="item">
+                  <div class="item__bestSeller">
+                    <span><b>BESTSELLER</b></span>
+                  </div>
+                  <a href="">
+                    <div class="item__header">
+                      <div class="overlay"></div>
+                      <img class="d-block w-100 mb-3" src="./img/courses-1.jpg">
+                    </div>
+                    <div class="item__content">
+                      <h6>Agile Crash Course: Agile Project Management; Agile Delivery</h6>
+                      <p>Mauricio Rubio - Agile Guru & Founder of AgileKB | Ureducation</p>
+                      <i class="fa fa-star gold-star"></i>
+                      <i class="fa fa-star gold-star"></i>
+                      <i class="fa fa-star gold-star"></i>
+                      <i class="fa fa-star gold-star"></i>
+                      <i class="fa fa-star silver-star"></i>
+                      <span><b>4.3</b> (27,307)</span>
+                      <div class="mt-3">
+                        <span>$109.99</span>
+                        <span><b>$12.99</b></span>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div class="item">
+                  <div class="item__bestSeller">
+                    <span><b>BESTSELLER</b></span>
+                  </div>
+                  <a href="">
+                    <div class="item__header">
+                      <div class="overlay"></div>
+                      <img class="d-block w-100 mb-3" src="./img/courses-2.jpg">
+                    </div>
+                    <div class="item__content">
+                      <h6>An Entire MBA in 1 Course:Award Winning Business School Prof</h6>
+                      <p>Chris Haroun</p>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <span><b>4.3</b> (27,307)</span>
+                      <div class="mt-3">
+                        <span>$109.99</span>
+                        <span><b>$12.99</b></span>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div class="item">
+                  <div class="item__bestSeller">
+                    <span><b>BESTSELLER</b></span>
+                  </div>
+                  <a href="">
+                    <div class="item__header">
+                      <div class="overlay"></div>
+                      <img class="d-block w-100 mb-3" src="./img/courses-3.jpg">
+                    </div>
+                    <div class="item__content">
+                      <h6>The Complete Foundation Stock Trading Course</h6>
+                      <p>Mohsen Hassan</p>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <span><b>4.3</b> (27,307)</span>
+                      <div class="mt-3">
+                        <span>$109.99</span>
+                        <span><b>$12.99</b></span>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div class="item">
+                  <div class="item__bestSeller">
+                    <span><b>BESTSELLER</b></span>
+                  </div>
+                  <a href="">
+                    <div class="item__header">
+                      <div class="overlay"></div>
+                      <img class="d-block w-100 mb-3" src="./img/courses-2.jpg">
+                    </div>
+                    <div class="item__content">
+                      <h6>Agile Crash Course: Agile Project Management; Agile Delivery</h6>
+                      <p>Mauricio Rubio - Agile Guru & Founder of AgileKB | Ureducation</p>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <span><b>4.3</b> (27,307)</span>
+                      <div class="mt-3">
+                        <span>$109.99</span>
+                        <span><b>$12.99</b></span>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div class="item">
+                  <div class="item__bestSeller">
+                    <span><b>BESTSELLER</b></span>
+                  </div>
+                  <a href="">
+                    <div class="item__header">
+                      <div class="overlay"></div>
+                      <img class="d-block w-100 mb-3" src="./img/courses-1.jpg">
+                    </div>
+                    <div class="item__content">
+                      <h6>Agile Crash Course: Agile Project Management; Agile Delivery</h6>
+                      <p>Mauricio Rubio - Agile Guru & Founder of AgileKB | Ureducation</p>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <span><b>4.3</b> (27,307)</span>
+                      <div class="mt-3">
+                        <span>$109.99</span>
+                        <span><b>$12.99</b></span>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div class="item">
+                  <div class="item__bestSeller">
+                    <span><b>BESTSELLER</b></span>
+                  </div>
+                  <a href="">
+                    <div class="item__header">
+                      <div class="overlay"></div>
+                      <img class="d-block w-100 mb-3" src="./img/courses-3.jpg">
+                    </div>
+                    <div class="item__content">
+                      <h6>Agile Crash Course: Agile Project Management; Agile Delivery</h6>
+                      <p>Mauricio Rubio - Agile Guru & Founder of AgileKB | Ureducation</p>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <span><b>4.3</b> (27,307)</span>
+                      <div class="mt-3">
+                        <span>$109.99</span>
+                        <span><b>$12.99</b></span>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="tab-pane container multiple-items" id="des">
+                <div class="item">
+                  <div class="item__bestSeller">
+                    <span><b>BESTSELLER</b></span>
+                  </div>
+                  <a href="">
+                    <div class="item__header">
+                      <div class="overlay"></div>
+                      <img class="d-block w-100 mb-3" src="./img/courses-1.jpg">
+                    </div>
+                    <div class="item__content">
+                      <h6>Agile Crash Course: Agile Project Management; Agile Delivery</h6>
+                      <p>Mauricio Rubio - Agile Guru & Founder of AgileKB | Ureducation</p>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <span><b>4.3</b> (27,307)</span>
+                      <div class="mt-3">
+                        <span>$109.99</span>
+                        <span><b>$12.99</b></span>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div class="item">
+                  <div class="item__bestSeller">
+                    <span><b>BESTSELLER</b></span>
+                  </div>
+                  <a href="">
+                    <div class="item__header">
+                      <div class="overlay"></div>
+                      <img class="d-block w-100 mb-3" src="./img/courses-2.jpg">
+                    </div>
+                    <div class="item__content">
+                      <h6>An Entire MBA in 1 Course:Award Winning Business School Prof</h6>
+                      <p>Chris Haroun</p>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <span><b>4.3</b> (27,307)</span>
+                      <div class="mt-3">
+                        <span>$109.99</span>
+                        <span><b>$12.99</b></span>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div class="item">
+                  <div class="item__bestSeller">
+                    <span><b>BESTSELLER</b></span>
+                  </div>
+                  <a href="">
+                    <div class="item__header">
+                      <div class="overlay"></div>
+                      <img class="d-block w-100 mb-3" src="./img/courses-3.jpg">
+                    </div>
+                    <div class="item__content">
+                      <h6>The Complete Foundation Stock Trading Course</h6>
+                      <p>Mohsen Hassan</p>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <span><b>4.3</b> (27,307)</span>
+                      <div class="mt-3">
+                        <span>$109.99</span>
+                        <span><b>$12.99</b></span>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div class="item">
+                  <div class="item__bestSeller">
+                    <span><b>BESTSELLER</b></span>
+                  </div>
+                  <a href="">
+                    <div class="item__header">
+                      <div class="overlay"></div>
+                      <img class="d-block w-100 mb-3" src="./img/courses-2.jpg">
+                    </div>
+                    <div class="item__content">
+                      <h6>Agile Crash Course: Agile Project Management; Agile Delivery</h6>
+                      <p>Mauricio Rubio - Agile Guru & Founder of AgileKB | Ureducation</p>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <span><b>4.3</b> (27,307)</span>
+                      <div class="mt-3">
+                        <span>$109.99</span>
+                        <span><b>$12.99</b></span>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div class="item">
+                  <div class="item__bestSeller">
+                    <span><b>BESTSELLER</b></span>
+                  </div>
+                  <a href="">
+                    <div class="item__header">
+                      <div class="overlay"></div>
+                      <img class="d-block w-100 mb-3" src="./img/courses-1.jpg">
+                    </div>
+                    <div class="item__content">
+                      <h6>Agile Crash Course: Agile Project Management; Agile Delivery</h6>
+                      <p>Mauricio Rubio - Agile Guru & Founder of AgileKB | Ureducation</p>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <span><b>4.3</b> (27,307)</span>
+                      <div class="mt-3">
+                        <span>$109.99</span>
+                        <span><b>$12.99</b></span>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div class="item">
+                  <div class="item__bestSeller">
+                    <span><b>BESTSELLER</b></span>
+                  </div>
+                  <a href="">
+                    <div class="item__header">
+                      <div class="overlay"></div>
+                      <img class="d-block w-100 mb-3" src="./img/courses-3.jpg">
+                    </div>
+                    <div class="item__content">
+                      <h6>Agile Crash Course: Agile Project Management; Agile Delivery</h6>
+                      <p>Mauricio Rubio - Agile Guru & Founder of AgileKB | Ureducation</p>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <span><b>4.3</b> (27,307)</span>
+                      <div class="mt-3">
+                        <span>$109.99</span>
+                        <span><b>$12.99</b></span>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="tab-pane container multiple-items" id="pho">
+                <div class="item">
+                  <div class="item__bestSeller">
+                    <span><b>BESTSELLER</b></span>
+                  </div>
+                  <a href="">
+                    <div class="item__header">
+                      <div class="overlay"></div>
+                      <img class="d-block w-100 mb-3" src="./img/courses-1.jpg">
+                    </div>
+                    <div class="item__content">
+                      <h6>Agile Crash Course: Agile Project Management; Agile Delivery</h6>
+                      <p>Mauricio Rubio - Agile Guru & Founder of AgileKB | Ureducation</p>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <span><b>4.3</b> (27,307)</span>
+                      <div class="mt-3">
+                        <span>$109.99</span>
+                        <span><b>$12.99</b></span>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div class="item">
+                  <div class="item__bestSeller">
+                    <span><b>BESTSELLER</b></span>
+                  </div>
+                  <a href="">
+                    <div class="item__header">
+                      <div class="overlay"></div>
+                      <img class="d-block w-100 mb-3" src="./img/courses-2.jpg">
+                    </div>
+                    <div class="item__content">
+                      <h6>An Entire MBA in 1 Course:Award Winning Business School Prof</h6>
+                      <p>Chris Haroun</p>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <span><b>4.3</b> (27,307)</span>
+                      <div class="mt-3">
+                        <span>$109.99</span>
+                        <span><b>$12.99</b></span>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div class="item">
+                  <div class="item__bestSeller">
+                    <span><b>BESTSELLER</b></span>
+                  </div>
+                  <a href="">
+                    <div class="item__header">
+                      <div class="overlay"></div>
+                      <img class="d-block w-100 mb-3" src="./img/courses-3.jpg">
+                    </div>
+                    <div class="item__content">
+                      <h6>The Complete Foundation Stock Trading Course</h6>
+                      <p>Mohsen Hassan</p>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <span><b>4.3</b> (27,307)</span>
+                      <div class="mt-3">
+                        <span>$109.99</span>
+                        <span><b>$12.99</b></span>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div class="item">
+                  <div class="item__bestSeller">
+                    <span><b>BESTSELLER</b></span>
+                  </div>
+                  <a href="">
+                    <div class="item__header">
+                      <div class="overlay"></div>
+                      <img class="d-block w-100 mb-3" src="./img/courses-2.jpg">
+                    </div>
+                    <div class="item__content">
+                      <h6>Agile Crash Course: Agile Project Management; Agile Delivery</h6>
+                      <p>Mauricio Rubio - Agile Guru & Founder of AgileKB | Ureducation</p>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <span><b>4.3</b> (27,307)</span>
+                      <div class="mt-3">
+                        <span>$109.99</span>
+                        <span><b>$12.99</b></span>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div class="item">
+                  <div class="item__bestSeller">
+                    <span><b>BESTSELLER</b></span>
+                  </div>
+                  <a href="">
+                    <div class="item__header">
+                      <div class="overlay"></div>
+                      <img class="d-block w-100 mb-3" src="./img/courses-1.jpg">
+                    </div>
+                    <div class="item__content">
+                      <h6>Agile Crash Course: Agile Project Management; Agile Delivery</h6>
+                      <p>Mauricio Rubio - Agile Guru & Founder of AgileKB | Ureducation</p>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <span><b>4.3</b> (27,307)</span>
+                      <div class="mt-3">
+                        <span>$109.99</span>
+                        <span><b>$12.99</b></span>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div class="item">
+                  <div class="item__bestSeller">
+                    <span><b>BESTSELLER</b></span>
+                  </div>
+                  <a href="">
+                    <div class="item__header">
+                      <div class="overlay"></div>
+                      <img class="d-block w-100 mb-3" src="./img/courses-3.jpg">
+                    </div>
+                    <div class="item__content">
+                      <h6>Agile Crash Course: Agile Project Management; Agile Delivery</h6>
+                      <p>Mauricio Rubio - Agile Guru & Founder of AgileKB | Ureducation</p>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <span><b>4.3</b> (27,307)</span>
+                      <div class="mt-3">
+                        <span>$109.99</span>
+                        <span><b>$12.99</b></span>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="tab-pane container multiple-items" id="dev">
+                <div class="item">
+                  <div class="item__bestSeller">
+                    <span><b>BESTSELLER</b></span>
+                  </div>
+                  <a href="">
+                    <div class="item__header">
+                      <div class="overlay"></div>
+                      <img class="d-block w-100 mb-3" src="./img/courses-1.jpg">
+                    </div>
+                    <div class="item__content">
+                      <h6>Agile Crash Course: Agile Project Management; Agile Delivery</h6>
+                      <p>Mauricio Rubio - Agile Guru & Founder of AgileKB | Ureducation</p>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <span><b>4.3</b> (27,307)</span>
+                      <div class="mt-3">
+                        <span>$109.99</span>
+                        <span><b>$12.99</b></span>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div class="item">
+                  <div class="item__bestSeller">
+                    <span><b>BESTSELLER</b></span>
+                  </div>
+                  <a href="">
+                    <div class="item__header">
+                      <div class="overlay"></div>
+                      <img class="d-block w-100 mb-3" src="./img/courses-2.jpg">
+                    </div>
+                    <div class="item__content">
+                      <h6>An Entire MBA in 1 Course:Award Winning Business School Prof</h6>
+                      <p>Chris Haroun</p>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <span><b>4.3</b> (27,307)</span>
+                      <div class="mt-3">
+                        <span>$109.99</span>
+                        <span><b>$12.99</b></span>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div class="item">
+                  <div class="item__bestSeller">
+                    <span><b>BESTSELLER</b></span>
+                  </div>
+                  <a href="">
+                    <div class="item__header">
+                      <div class="overlay"></div>
+                      <img class="d-block w-100 mb-3" src="./img/courses-3.jpg">
+                    </div>
+                    <div class="item__content">
+                      <h6>The Complete Foundation Stock Trading Course</h6>
+                      <p>Mohsen Hassan</p>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <span><b>4.3</b> (27,307)</span>
+                      <div class="mt-3">
+                        <span>$109.99</span>
+                        <span><b>$12.99</b></span>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div class="item">
+                  <div class="item__bestSeller">
+                    <span><b>BESTSELLER</b></span>
+                  </div>
+                  <a href="">
+                    <div class="item__header">
+                      <div class="overlay"></div>
+                      <img class="d-block w-100 mb-3" src="./img/courses-2.jpg">
+                    </div>
+                    <div class="item__content">
+                      <h6>Agile Crash Course: Agile Project Management; Agile Delivery</h6>
+                      <p>Mauricio Rubio - Agile Guru & Founder of AgileKB | Ureducation</p>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <span><b>4.3</b> (27,307)</span>
+                      <div class="mt-3">
+                        <span>$109.99</span>
+                        <span><b>$12.99</b></span>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div class="item">
+                  <div class="item__bestSeller">
+                    <span><b>BESTSELLER</b></span>
+                  </div>
+                  <a href="">
+                    <div class="item__header">
+                      <div class="overlay"></div>
+                      <img class="d-block w-100 mb-3" src="./img/courses-1.jpg">
+                    </div>
+                    <div class="item__content">
+                      <h6>Agile Crash Course: Agile Project Management; Agile Delivery</h6>
+                      <p>Mauricio Rubio - Agile Guru & Founder of AgileKB | Ureducation</p>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <span><b>4.3</b> (27,307)</span>
+                      <div class="mt-3">
+                        <span>$109.99</span>
+                        <span><b>$12.99</b></span>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div class="item">
+                  <div class="item__bestSeller">
+                    <span><b>BESTSELLER</b></span>
+                  </div>
+                  <a href="">
+                    <div class="item__header">
+                      <div class="overlay"></div>
+                      <img class="d-block w-100 mb-3" src="./img/courses-3.jpg">
+                    </div>
+                    <div class="item__content">
+                      <h6>Agile Crash Course: Agile Project Management; Agile Delivery</h6>
+                      <p>Mauricio Rubio - Agile Guru & Founder of AgileKB | Ureducation</p>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <span><b>4.3</b> (27,307)</span>
+                      <div class="mt-3">
+                        <span>$109.99</span>
+                        <span><b>$12.99</b></span>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="tab-pane container multiple-items" id="mar">
+                <div class="item">
+                  <div class="item__bestSeller">
+                    <span><b>BESTSELLER</b></span>
+                  </div>
+                  <a href="">
+                    <div class="item__header">
+                      <div class="overlay"></div>
+                      <img class="d-block w-100 mb-3" src="./img/courses-1.jpg">
+                    </div>
+                    <div class="item__content">
+                      <h6>Agile Crash Course: Agile Project Management; Agile Delivery</h6>
+                      <p>Mauricio Rubio - Agile Guru & Founder of AgileKB | Ureducation</p>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <span><b>4.3</b> (27,307)</span>
+                      <div class="mt-3">
+                        <span>$109.99</span>
+                        <span><b>$12.99</b></span>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div class="item">
+                  <div class="item__bestSeller">
+                    <span><b>BESTSELLER</b></span>
+                  </div>
+                  <a href="">
+                    <div class="item__header">
+                      <div class="overlay"></div>
+                      <img class="d-block w-100 mb-3" src="./img/courses-2.jpg">
+                    </div>
+                    <div class="item__content">
+                      <h6>An Entire MBA in 1 Course:Award Winning Business School Prof</h6>
+                      <p>Chris Haroun</p>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <span><b>4.3</b> (27,307)</span>
+                      <div class="mt-3">
+                        <span>$109.99</span>
+                        <span><b>$12.99</b></span>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div class="item">
+                  <div class="item__bestSeller">
+                    <span><b>BESTSELLER</b></span>
+                  </div>
+                  <a href="">
+                    <div class="item__header">
+                      <div class="overlay"></div>
+                      <img class="d-block w-100 mb-3" src="./img/courses-3.jpg">
+                    </div>
+                    <div class="item__content">
+                      <h6>The Complete Foundation Stock Trading Course</h6>
+                      <p>Mohsen Hassan</p>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <span><b>4.3</b> (27,307)</span>
+                      <div class="mt-3">
+                        <span>$109.99</span>
+                        <span><b>$12.99</b></span>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div class="item">
+                  <div class="item__bestSeller">
+                    <span><b>BESTSELLER</b></span>
+                  </div>
+                  <a href="">
+                    <div class="item__header">
+                      <div class="overlay"></div>
+                      <img class="d-block w-100 mb-3" src="./img/courses-2.jpg">
+                    </div>
+                    <div class="item__content">
+                      <h6>Agile Crash Course: Agile Project Management; Agile Delivery</h6>
+                      <p>Mauricio Rubio - Agile Guru & Founder of AgileKB | Ureducation</p>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <span><b>4.3</b> (27,307)</span>
+                      <div class="mt-3">
+                        <span>$109.99</span>
+                        <span><b>$12.99</b></span>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div class="item">
+                  <div class="item__bestSeller">
+                    <span><b>BESTSELLER</b></span>
+                  </div>
+                  <a href="">
+                    <div class="item__header">
+                      <div class="overlay"></div>
+                      <img class="d-block w-100 mb-3" src="./img/courses-1.jpg">
+                    </div>
+                    <div class="item__content">
+                      <h6>Agile Crash Course: Agile Project Management; Agile Delivery</h6>
+                      <p>Mauricio Rubio - Agile Guru & Founder of AgileKB | Ureducation</p>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <span><b>4.3</b> (27,307)</span>
+                      <div class="mt-3">
+                        <span>$109.99</span>
+                        <span><b>$12.99</b></span>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div class="item">
+                  <div class="item__bestSeller">
+                    <span><b>BESTSELLER</b></span>
+                  </div>
+                  <a href="">
+                    <div class="item__header">
+                      <div class="overlay"></div>
+                      <img class="d-block w-100 mb-3" src="./img/courses-3.jpg">
+                    </div>
+                    <div class="item__content">
+                      <h6>Agile Crash Course: Agile Project Management; Agile Delivery</h6>
+                      <p>Mauricio Rubio - Agile Guru & Founder of AgileKB | Ureducation</p>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <span><b>4.3</b> (27,307)</span>
+                      <div class="mt-3">
+                        <span>$109.99</span>
+                        <span><b>$12.99</b></span>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="tab-pane container multiple-items" id="its">
+                <div class="item">
+                  <div class="item__bestSeller">
+                    <span><b>BESTSELLER</b></span>
+                  </div>
+                  <a href="">
+                    <div class="item__header">
+                      <div class="overlay"></div>
+                      <img class="d-block w-100 mb-3" src="./img/courses-1.jpg">
+                    </div>
+                    <div class="item__content">
+                      <h6>Agile Crash Course: Agile Project Management; Agile Delivery</h6>
+                      <p>Mauricio Rubio - Agile Guru & Founder of AgileKB | Ureducation</p>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <span><b>4.3</b> (27,307)</span>
+                      <div class="mt-3">
+                        <span>$109.99</span>
+                        <span><b>$12.99</b></span>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div class="item">
+                  <div class="item__bestSeller">
+                    <span><b>BESTSELLER</b></span>
+                  </div>
+                  <a href="">
+                    <div class="item__header">
+                      <div class="overlay"></div>
+                      <img class="d-block w-100 mb-3" src="./img/courses-2.jpg">
+                    </div>
+                    <div class="item__content">
+                      <h6>An Entire MBA in 1 Course:Award Winning Business School Prof</h6>
+                      <p>Chris Haroun</p>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <span><b>4.3</b> (27,307)</span>
+                      <div class="mt-3">
+                        <span>$109.99</span>
+                        <span><b>$12.99</b></span>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div class="item">
+                  <div class="item__bestSeller">
+                    <span><b>BESTSELLER</b></span>
+                  </div>
+                  <a href="">
+                    <div class="item__header">
+                      <div class="overlay"></div>
+                      <img class="d-block w-100 mb-3" src="./img/courses-3.jpg">
+                    </div>
+                    <div class="item__content">
+                      <h6>The Complete Foundation Stock Trading Course</h6>
+                      <p>Mohsen Hassan</p>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <span><b>4.3</b> (27,307)</span>
+                      <div class="mt-3">
+                        <span>$109.99</span>
+                        <span><b>$12.99</b></span>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div class="item">
+                  <div class="item__bestSeller">
+                    <span><b>BESTSELLER</b></span>
+                  </div>
+                  <a href="">
+                    <div class="item__header">
+                      <div class="overlay"></div>
+                      <img class="d-block w-100 mb-3" src="./img/courses-2.jpg">
+                    </div>
+                    <div class="item__content">
+                      <h6>Agile Crash Course: Agile Project Management; Agile Delivery</h6>
+                      <p>Mauricio Rubio - Agile Guru & Founder of AgileKB | Ureducation</p>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <span><b>4.3</b> (27,307)</span>
+                      <div class="mt-3">
+                        <span>$109.99</span>
+                        <span><b>$12.99</b></span>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div class="item">
+                  <div class="item__bestSeller">
+                    <span><b>BESTSELLER</b></span>
+                  </div>
+                  <a href="">
+                    <div class="item__header">
+                      <div class="overlay"></div>
+                      <img class="d-block w-100 mb-3" src="./img/courses-1.jpg">
+                    </div>
+                    <div class="item__content">
+                      <h6>Agile Crash Course: Agile Project Management; Agile Delivery</h6>
+                      <p>Mauricio Rubio - Agile Guru & Founder of AgileKB | Ureducation</p>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <span><b>4.3</b> (27,307)</span>
+                      <div class="mt-3">
+                        <span>$109.99</span>
+                        <span><b>$12.99</b></span>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div class="item">
+                  <div class="item__bestSeller">
+                    <span><b>BESTSELLER</b></span>
+                  </div>
+                  <a href="">
+                    <div class="item__header">
+                      <div class="overlay"></div>
+                      <img class="d-block w-100 mb-3" src="./img/courses-3.jpg">
+                    </div>
+                    <div class="item__content">
+                      <h6>Agile Crash Course: Agile Project Management; Agile Delivery</h6>
+                      <p>Mauricio Rubio - Agile Guru & Founder of AgileKB | Ureducation</p>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <span><b>4.3</b> (27,307)</span>
+                      <div class="mt-3">
+                        <span>$109.99</span>
+                        <span><b>$12.99</b></span>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="tab-pane container multiple-items" id="pdev">
+                <div class="item">
+                  <div class="item__bestSeller">
+                    <span><b>BESTSELLER</b></span>
+                  </div>
+                  <a href="">
+                    <div class="item__header">
+                      <div class="overlay"></div>
+                      <img class="d-block w-100 mb-3" src="./img/courses-1.jpg">
+                    </div>
+                    <div class="item__content">
+                      <h6>Agile Crash Course: Agile Project Management; Agile Delivery</h6>
+                      <p>Mauricio Rubio - Agile Guru & Founder of AgileKB | Ureducation</p>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <span><b>4.3</b> (27,307)</span>
+                      <div class="mt-3">
+                        <span>$109.99</span>
+                        <span><b>$12.99</b></span>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div class="item">
+                  <div class="item__bestSeller">
+                    <span><b>BESTSELLER</b></span>
+                  </div>
+                  <a href="">
+                    <div class="item__header">
+                      <div class="overlay"></div>
+                      <img class="d-block w-100 mb-3" src="./img/courses-2.jpg">
+                    </div>
+                    <div class="item__content">
+                      <h6>An Entire MBA in 1 Course:Award Winning Business School Prof</h6>
+                      <p>Chris Haroun</p>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <span><b>4.3</b> (27,307)</span>
+                      <div class="mt-3">
+                        <span>$109.99</span>
+                        <span><b>$12.99</b></span>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div class="item">
+                  <div class="item__bestSeller">
+                    <span><b>BESTSELLER</b></span>
+                  </div>
+                  <a href="">
+                    <div class="item__header">
+                      <div class="overlay"></div>
+                      <img class="d-block w-100 mb-3" src="./img/courses-3.jpg">
+                    </div>
+                    <div class="item__content">
+                      <h6>The Complete Foundation Stock Trading Course</h6>
+                      <p>Mohsen Hassan</p>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <span><b>4.3</b> (27,307)</span>
+                      <div class="mt-3">
+                        <span>$109.99</span>
+                        <span><b>$12.99</b></span>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div class="item">
+                  <div class="item__bestSeller">
+                    <span><b>BESTSELLER</b></span>
+                  </div>
+                  <a href="">
+                    <div class="item__header">
+                      <div class="overlay"></div>
+                      <img class="d-block w-100 mb-3" src="./img/courses-2.jpg">
+                    </div>
+                    <div class="item__content">
+                      <h6>Agile Crash Course: Agile Project Management; Agile Delivery</h6>
+                      <p>Mauricio Rubio - Agile Guru & Founder of AgileKB | Ureducation</p>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <span><b>4.3</b> (27,307)</span>
+                      <div class="mt-3">
+                        <span>$109.99</span>
+                        <span><b>$12.99</b></span>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div class="item">
+                  <div class="item__bestSeller">
+                    <span><b>BESTSELLER</b></span>
+                  </div>
+                  <a href="">
+                    <div class="item__header">
+                      <div class="overlay"></div>
+                      <img class="d-block w-100 mb-3" src="./img/courses-1.jpg">
+                    </div>
+                    <div class="item__content">
+                      <h6>Agile Crash Course: Agile Project Management; Agile Delivery</h6>
+                      <p>Mauricio Rubio - Agile Guru & Founder of AgileKB | Ureducation</p>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <span><b>4.3</b> (27,307)</span>
+                      <div class="mt-3">
+                        <span>$109.99</span>
+                        <span><b>$12.99</b></span>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div class="item">
+                  <div class="item__bestSeller">
+                    <span><b>BESTSELLER</b></span>
+                  </div>
+                  <a href="">
+                    <div class="item__header">
+                      <div class="overlay"></div>
+                      <img class="d-block w-100 mb-3" src="./img/courses-3.jpg">
+                    </div>
+                    <div class="item__content">
+                      <h6>Agile Crash Course: Agile Project Management; Agile Delivery</h6>
+                      <p>Mauricio Rubio - Agile Guru & Founder of AgileKB | Ureducation</p>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <span><b>4.3</b> (27,307)</span>
+                      <div class="mt-3">
+                        <span>$109.99</span>
+                        <span><b>$12.99</b></span>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="services">
+      <div class="services__content container">
+        <div class="students__carousel multiple-3-items">
+          <div class="item">
+            <div class="services__item row">
+              <span class="col-lg-2"><i class="fa fa-dot-circle"></i></span>
+              <div class="services__text col-lg-10">
+                <b>Go at your own pace</b>
+                <p>Enjoy lifetime access to courses on Udemy’s website and app</p>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="services__item row">
+              <span class="col-lg-2"><i class="fa fa-comment"></i></span>
+              <div class="services__text col-lg-10">
+                <b>Learn from industry experts</b>
+                <p>Select from top instructors around the world</p>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="services__item row">
+              <span class="col-lg-2"><i class="fa fa-clock"></i></span>
+              <div class="services__text col-lg-10">
+                <b>Find video courses on almost any topic</b>
+                <p>Build your library for your career and personal growth</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="students">
+      <div class="students__content container carousel__item">
+        <h2>Students are viewing</h2>
+        <div class="students__carousel multiple-5-items">
+          <div class="item">
+            <div class="item__bestSeller">
+              <span><b>BESTSELLER</b></span>
+            </div>
+            <a href="">
+              <div class="item__header">
+                <div class="overlay"></div>
+                <img class="d-block w-100 mb-3" src="./img/courses-1.jpg" alt="">
+              </div>
+              <div class="item__content">
+                <h6>Agile Crash Course: Agile Project Management; Agile Delivery</h6>
+                <p>Mauricio Rubio - Agile Guru & Founder of AgileKB | Ureducation</p>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <span><b>4.3</b> (27,307)</span>
+                <div class="mt-3">
+                  <span>$109.99</span>
+                  <span><b>$12.99</b></span>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="item">
+            <div class="item__bestSeller">
+              <span><b>BESTSELLER</b></span>
+            </div>
+            <a href="">
+              <div class="item__header">
+                <div class="overlay"></div>
+                <img class="d-block w-100 mb-3" src="./img/kh1.jpg" alt="">
+              </div>
+              <div class="item__content">
+                <h6>Agile Crash Course: Agile Project Management; Agile Delivery</h6>
+                <p>Mauricio Rubio - Agile Guru & Founder of AgileKB | Ureducation</p>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <span><b>4.3</b> (27,307)</span>
+                <div class="mt-3">
+                  <span>$109.99</span>
+                  <span><b>$12.99</b></span>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="item">
+            <div class="item__bestSeller">
+              <span><b>BESTSELLER</b></span>
+            </div>
+            <a href="">
+              <div class="item__header">
+                <div class="overlay"></div>
+                <img class="d-block w-100 mb-3" src="./img/kh2.jpg" alt="">
+              </div>
+              <div class="item__content">
+                <h6>Agile Crash Course: Agile Project Management; Agile Delivery</h6>
+                <p>Mauricio Rubio - Agile Guru & Founder of AgileKB | Ureducation</p>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <span><b>4.3</b> (27,307)</span>
+                <div class="mt-3">
+                  <span>$109.99</span>
+                  <span><b>$12.99</b></span>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="item">
+            <div class="item__bestSeller">
+              <span><b>BESTSELLER</b></span>
+            </div>
+            <a href="">
+              <div class="item__header">
+                <div class="overlay"></div>
+                <img class="d-block w-100 mb-3" src="./img/kh3.jpg" alt="">
+              </div>
+              <div class="item__content">
+                <h6>Agile Crash Course: Agile Project Management; Agile Delivery</h6>
+                <p>Mauricio Rubio - Agile Guru & Founder of AgileKB | Ureducation</p>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <span><b>4.3</b> (27,307)</span>
+                <div class="mt-3">
+                  <span>$109.99</span>
+                  <span><b>$12.99</b></span>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="item">
+            <div class="item__bestSeller">
+              <span><b>BESTSELLER</b></span>
+            </div>
+            <a href="">
+              <div class="item__header">
+                <div class="overlay"></div>
+                <img class="d-block w-100 mb-3" src="./img/kh4.jpg" alt="">
+              </div>
+              <div class="item__content">
+                <h6>Agile Crash Course: Agile Project Management; Agile Delivery</h6>
+                <p>Mauricio Rubio - Agile Guru & Founder of AgileKB | Ureducation</p>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <span><b>4.3</b> (27,307)</span>
+                <div class="mt-3">
+                  <span>$109.99</span>
+                  <span><b>$12.99</b></span>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="item">
+            <div class="item__bestSeller">
+              <span><b>BESTSELLER</b></span>
+            </div>
+            <a href="">
+              <div class="item__header">
+                <div class="overlay"></div>
+                <img class="d-block w-100 mb-3" src="./img/kh5.jpg" alt="">
+              </div>
+              <div class="item__content">
+                <h6>Agile Crash Course: Agile Project Management; Agile Delivery</h6>
+                <p>Mauricio Rubio - Agile Guru & Founder of AgileKB | Ureducation</p>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <span><b>4.3</b> (27,307)</span>
+                <div class="mt-3">
+                  <span>$109.99</span>
+                  <span><b>$12.99</b></span>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="item">
+            <div class="item__bestSeller">
+              <span><b>BESTSELLER</b></span>
+            </div>
+            <a href="">
+              <div class="item__header">
+                <div class="overlay"></div>
+                <img class="d-block w-100 mb-3" src="./img/kh6.jpg" alt="">
+              </div>
+              <div class="item__content">
+                <h6>Agile Crash Course: Agile Project Management; Agile Delivery</h6>
+                <p>Mauricio Rubio - Agile Guru & Founder of AgileKB | Ureducation</p>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <span><b>4.3</b> (27,307)</span>
+                <div class="mt-3">
+                  <span>$109.99</span>
+                  <span><b>$12.99</b></span>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="item">
+            <div class="item__bestSeller">
+              <span><b>BESTSELLER</b></span>
+            </div>
+            <a href="">
+              <div class="item__header">
+                <div class="overlay"></div>
+                <img class="d-block w-100 mb-3" src="./img/kh1.jpg" alt="">
+              </div>
+              <div class="item__content">
+                <h6>Agile Crash Course: Agile Project Management; Agile Delivery</h6>
+                <p>Mauricio Rubio - Agile Guru & Founder of AgileKB | Ureducation</p>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <span><b>4.3</b> (27,307)</span>
+                <div class="mt-3">
+                  <span>$109.99</span>
+                  <span><b>$12.99</b></span>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="item">
+            <div class="item__bestSeller">
+              <span><b>BESTSELLER</b></span>
+            </div>
+            <a href="">
+              <div class="item__header">
+                <div class="overlay"></div>
+                <img class="d-block w-100 mb-3" src="./img/kh8.jpg" alt="">
+              </div>
+              <div class="item__content">
+                <h6>Agile Crash Course: Agile Project Management; Agile Delivery</h6>
+                <p>Mauricio Rubio - Agile Guru & Founder of AgileKB | Ureducation</p>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <span><b>4.3</b> (27,307)</span>
+                <div class="mt-3">
+                  <span>$109.99</span>
+                  <span><b>$12.99</b></span>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="item">
+            <div class="item__bestSeller">
+              <span><b>BESTSELLER</b></span>
+            </div>
+            <a href="">
+              <div class="item__header">
+                <div class="overlay"></div>
+                <img class="d-block w-100 mb-3" src="./img/kh9.jpg" alt="">
+              </div>
+              <div class="item__content">
+                <h6>Agile Crash Course: Agile Project Management; Agile Delivery</h6>
+                <p>Mauricio Rubio - Agile Guru & Founder of AgileKB | Ureducation</p>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <span><b>4.3</b> (27,307)</span>
+                <div class="mt-3">
+                  <span>$109.99</span>
+                  <span><b>$12.99</b></span>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="item">
+            <div class="item__bestSeller">
+              <span><b>BESTSELLER</b></span>
+            </div>
+            <a href="">
+              <div class="item__header">
+                <div class="overlay"></div>
+                <img class="d-block w-100 mb-3" src="./img/kh11.jpg" alt="">
+              </div>
+              <div class="item__content">
+                <h6>Agile Crash Course: Agile Project Management; Agile Delivery</h6>
+                <p>Mauricio Rubio - Agile Guru & Founder of AgileKB | Ureducation</p>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <span><b>4.3</b> (27,307)</span>
+                <div class="mt-3">
+                  <span>$109.99</span>
+                  <span><b>$12.99</b></span>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="item">
+            <div class="item__bestSeller">
+              <span><b>BESTSELLER</b></span>
+            </div>
+            <a href="">
+              <div class="item__header">
+                <div class="overlay"></div>
+                <img class="d-block w-100 mb-3" src="./img/kh12.jpg" alt="">
+              </div>
+              <div class="item__content">
+                <h6>Agile Crash Course: Agile Project Management; Agile Delivery</h6>
+                <p>Mauricio Rubio - Agile Guru & Founder of AgileKB | Ureducation</p>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <span><b>4.3</b> (27,307)</span>
+                <div class="mt-3">
+                  <span>$109.99</span>
+                  <span><b>$12.99</b></span>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="item">
+            <div class="item__bestSeller">
+              <span><b>BESTSELLER</b></span>
+            </div>
+            <a href="">
+              <div class="item__header">
+                <div class="overlay"></div>
+                <img class="d-block w-100 mb-3" src="./img/kh12.jpg" alt="">
+              </div>
+              <div class="item__content">
+                <h6>Agile Crash Course: Agile Project Management; Agile Delivery</h6>
+                <p>Mauricio Rubio - Agile Guru & Founder of AgileKB | Ureducation</p>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <span><b>4.3</b> (27,307)</span>
+                <div class="mt-3">
+                  <span>$109.99</span>
+                  <span><b>$12.99</b></span>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="item">
+            <div class="item__bestSeller">
+              <span><b>BESTSELLER</b></span>
+            </div>
+            <a href="">
+              <div class="item__header">
+                <div class="overlay"></div>
+                <img class="d-block w-100 mb-3" src="./img/kh13.jpg" alt="">
+              </div>
+              <div class="item__content">
+                <h6>Agile Crash Course: Agile Project Management; Agile Delivery</h6>
+                <p>Mauricio Rubio - Agile Guru & Founder of AgileKB | Ureducation</p>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <span><b>4.3</b> (27,307)</span>
+                <div class="mt-3">
+                  <span>$109.99</span>
+                  <span><b>$12.99</b></span>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="item">
+            <div class="item__bestSeller">
+              <span><b>BESTSELLER</b></span>
+            </div>
+            <a href="">
+              <div class="item__header">
+                <div class="overlay"></div>
+                <img class="d-block w-100 mb-3" src="./img/kh14.jpg" alt="">
+              </div>
+              <div class="item__content">
+                <h6>Agile Crash Course: Agile Project Management; Agile Delivery</h6>
+                <p>Mauricio Rubio - Agile Guru & Founder of AgileKB | Ureducation</p>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <span><b>4.3</b> (27,307)</span>
+                <div class="mt-3">
+                  <span>$109.99</span>
+                  <span><b>$12.99</b></span>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="banner">
+      <div class="banner__top-border"></div>
+      <div class="banner__under">
+        <div class="banner__icon-row container">
+          <i class="fa fa-play-circle"></i>
+          <i class="fab fa-accessible-icon"></i>
+          <i class="fab fa-accusoft"></i>
+          <i class="fab fa-acquisitions-incorporated"></i>
+          <i class="fab fa-adobe"></i>
+        </div>
+        <div class="banner__content">
+          <i class="fab fa-algolia"></i>
+          <div class="banner__text text-center">
+            <h5><b>Get personalized recommendations</b></h5>
+            <p>Answer a few questions for your top picks</p>
+            <button class="noBorder">Get started</button>
+          </div>
+          <i class="fa fa-air-freshener"></i>
+        </div>
+        <div class="banner__icon-row container">
+          <i class="fa fa-play-circle"></i>
+          <i class="fab fa-accessible-icon"></i>
+          <i class="fab fa-accusoft"></i>
+          <i class="fab fa-acquisitions-incorporated"></i>
+          <i class="fab fa-adobe"></i>
+        </div>
+      </div>
+      
+    </section>
+    <section class="topCategories ">
+      
+      <div class="topCategories__content container pb-5">
+        <p><b>Top Categories</b></p>
+        <div class="row">
+          <div class="topCategories__item col-xl-3 col-lg-4 col-md-6 col-12">
+            <a href="">
+              <span><i class="fa fa-code"></i></span>
+              <span>Development</span>
+            </a>
+          </div>
+          <div class="topCategories__item col-xl-3 col-lg-4 col-md-6 col-12">
+            <a href="">
+              <span><i class="fa fa-chart-area"></i></span>
+              <span>Business</span>
+            </a>
+          </div>
+          <div class="topCategories__item col-xl-3 col-lg-4 col-md-6 col-12">
+            <a href="">
+              <span><i class="fa fa-desktop"></i></span>
+              <span>IT & Software</span>
+            </a>
+          </div>
+          <div class="topCategories__item col-xl-3 col-lg-4 col-md-6 col-12">
+            <a href="">
+              <span><i class="fa fa-pencil-ruler"></i></span>
+              <span>Design</span>
+            </a>
+          </div>
+          <div class="topCategories__item col-xl-3 col-lg-4 col-md-6 col-12">
+            <a href="">
+              <span><i class="fa fa-dot-circle"></i></i></span>
+              <span>Marketing</span>
+            </a>
+          </div>
+          <div class="topCategories__item col-xl-3 col-lg-4 col-md-6 col-12">
+            <a href="">
+              <span><i class="fa fa-book-open"></i></span>
+              <span>Personal Development</span>
+            </a>
+          </div>
+          <div class="topCategories__item col-xl-3 col-lg-4 col-md-6 col-12">
+            <a href="">
+              <span><i class="fa fa-camera-retro"></i></span>
+              <span>Photography</span>
+            </a>
+          </div>
+          <div class="topCategories__item col-xl-3 col-lg-4 col-md-6 col-12">
+            <a href="">
+              <span><i class="fa fa-music"></i></span>
+              <span>Music</span>
+            </a>
+          </div>
+        </div>
+        
+      </div>
+    </section>
+    <section class="feedback">
+      <div class="feedback__content container">
+        <h2>What our students have to say</h2>
+        <div class="feedback__carousel carousel__item multiple-3-items row">
+          <div class="item col-4 noBorder">
+            <div class="item-person">
+              <div class="item-name">
+                <img src="./img/people-1.jpg" alt="">
+                <span><b>Borivoje</b></span>
+              </div>
+              <div class="item-review">
+                <p>Udemy is a life saver. I don't have the time or money for a college education. My goal is to become a freelance web developer, and thanks to Udemy, I'm really close.</p>
+              </div>
+            </div>
+          </div>
+          <div class="item col-4 noBorder">
+            <div class="item-person">
+              <div class="item-name">
+                <span><img src="./img/people-2.jpg" alt=""></span>
+                <span><b>Dipesh</b></span>
+              </div>
+              <div class="item-review">
+                <p>I believe in lifelong learning and Udemy is a great place to learn from experts. I've learned a lot and recommend it to all my friends.</p>
+              </div>
+            </div>
+          </div>
+          <div class="item col-4 noBorder">
+            <div class="item-person">
+              <div class="item-name">
+                <span><img src="./img/people-3.jpg" alt=""></span>
+                <span><b>Zulaika</b></span>
+              </div>
+              <div class="item-review">
+                <p>I work in project management and joined Udemy because I get great courses for less. The instructors are fantastic, interesting, and helpful. I plan to use Udemy for a long time!</p>
+              </div>
+            </div>
+          </div>
+          <div class="item col-4 noBorder">
+            <div class="item-person">
+              <div class="item-name">
+                <span><img src="./img/people-2.jpg" alt=""></span>
+                <span><b>Kathy</b></span>
+              </div>
+              <div class="item-review">
+                <p>My children and I LOVE Udemy! The courses are fantastic and the instructors are so fun and knowledgeable. I only wish we found it sooner.</p>
+              </div>
+            </div>
+            
+          </div>
+          <div class="item col-4 noBorder">
+            <div class="item-person">
+              <div class="item-name">
+                <span><img src="./img/people-3.jpg" alt=""></span>
+                <span><b>Marco</b></span>
+              </div>
+              <div class="item-review">
+                <p>Thank you Udemy! You've renewed my passion for learning and my dream of becoming a web developer.</p>
+              </div>
+            </div>
+            
+          </div>
+          <div class="item col-4 noBorder">
+            <div class="item-person">
+              <div class="item-name">
+                <img src="./img/people-1.jpg" alt="">
+                <span><b>Justin</b></span>
+              </div>
+              <div class="item-review">
+                <p>The best part about Udemy is the selection. You can find a course for anything you want to learn!</p>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="companies">
+      <div class="companies__content text-center">
+        <p>Trusted by companies of all sizes</p>
+        <div class="companies__logo container">
+          <a href=""><img src="./img/booking.svg" alt=""></a>
+          <a href=""><img src="./img/volkswagen.svg" alt=""></a>
+          <a href=""><img src="./img/mercedes.svg" alt=""></a>
+          <a href=""><img src="./img/pinterest.svg" alt=""></a>
+          <a href=""><img src="./img/adidas.svg" alt=""></a>
+          <a href=""><img src="./img/paypal.svg" alt=""></a>
+        </div>
+        <div class="companies__register row">
+          <div class="register__content col-6">
+            <div class="register__instructor">
+              <a><b>Become an instructor</b></a>
+              <p>Top instructors from around the world teach millions of students on Udemy. We provide the tools and skills to teach what you love.</p>
+              <button class="noBorder udebtn-red">Star teaching today</button>
+            </div>
+          </div>
+          <div class="register__content col-6">
+            <div class="register__business">
+              <a><b>Udemy for Business</b></a>
+              <p>Get unlimited access to 4,000+ of Udemy’s top courses for your team.</p>
+              <button class="noBorder udebtn-red">Get Udemy for Business</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="footer__content">
+        <div class="row">
+          <div class="d-none d-md-flex col-md-3">
+            <ul>
+              <li><a href=""><b>Udemy for Business</b></a></li>
+              <li><a href=""><b>Teach on Udemy</b></a></li>
+              <li><a href="">Udemy app</a></li>
+              <li><a href="">About us</a></li>
+            </ul>
+          </div>
+          <div class="d-none d-md-flex col-md-3">
+            <ul>
+              <li><a href="">Contact Us</a></li>
+              <li><a href="">Careers</a></li>
+              <li><a href="">Blog</a></li>
+              <li><a href="">Help and Support</a></li>
+            </ul>
+          </div>
+          <div class="d-none d-md-flex col-md-3">
+            <ul>
+              <li><a href="">Affiliate</a></li>
+              <li><a href="">Sitemap</a></li>
+              <li><a href="">Feature courses</a></li>
+            </ul>
+            
+          </div>
+          <div class="d-md-flex col-12 col-md-3">
+            <div class="btn-group" role="group">
+              <button id="btnGroupDrop1" type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown">
+                English
+              </button>
+              <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+                <a class="dropdown-item" href="">English</a>
+                <a class="dropdown-item" href="">Deutsch</a>
+                <a class="dropdown-item" href="">Español</a>
+                <a class="dropdown-item" href="">Français</a>
+                <a class="dropdown-item" href="">Bahasa Indonesia</a>
+                <a class="dropdown-item" href="">Italiano</a>
+                <a class="dropdown-item" href="">日本語</a>
+                <a class="dropdown-item" href="">한국어</a>
+                <a class="dropdown-item" href="">Nederlands</a>
+                <a class="dropdown-item" href="">Português</a>
+                <a class="dropdown-item" href="">Română</a>
+                <a class="dropdown-item" href="">Русский</a>
+                <a class="dropdown-item" href="">ภาษาไทย</a>
+                <a class="dropdown-item" href="">Türkçe</a>
+                <a class="dropdown-item" href="">中文(简体)</a>
+                <a class="dropdown-item" href="">中文(繁體)</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer__down d-block d-md-flex">
+          <div class="footer__logo">
+            <a href="#"><img src="./img/logo-coral.svg" alt=""></a>
+            <span>Copyright © 2020 Udemy, Inc.</span>
+          </div>
+          <div class="footer__link">
+            <div class="link-show">
+              <a href="">Term</a>
+              <a href="">Privacy Policy and Cookie Policy</a>
+            </div>
+            <div class="link-hide d-flex d-md-none">
+              <a href="">Sitemap</a>
+              <a href="">Feature Courses</a>
+              <a href="">About us</a>
+              <a href="">Contact us</a>
+              <a href="">Blog</a>
+              <a href="">Get the app</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Thư viện hỗ trợ -->
+    <script
+  src="https://code.jquery.com/jquery-3.5.1.min.js"
+  integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+  crossorigin="anonymous"></script>
+
+    <!-- BS4 JS -->
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+    <!-- SLICK -->
+    
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <!-- carousel-3-items -->
+    <script>
+      $(document).ready(function(){
+        $('.multiple-items').slick({
+          infinite: false,
+          slidesToShow: 3,
+          slidesToScroll: 3,
+          prevArrow:'<i class="fa fa-arrow-left"></i>',
+          nextArrow:'<i class="fa fa-arrow-right"></i>'
+        });
+        $('.multiple-5-items').slick({
+          infinite: false,
+          slidesToShow: 5,
+          slidesToScroll: 5,
+          prevArrow:'<i class="fa fa-arrow-left"></i>',
+          nextArrow:'<i class="fa fa-arrow-right"></i>',
+          responsive: [
+            {
+              breakpoint: 992,
+              settings: {
+                slidesToShow: 4,
+                slidesToScroll: 4,
+                infinite: true,
+                
+              }
+            },
+            {
+              breakpoint: 768,
+              settings: {
+                slidesToShow: 3,
+                slidesToScroll: 3
+              }
+            },
+          ]
+        });
+        $('.multiple-3-items').slick({
+          infinite: false,
+          slidesToShow: 3,
+          slidesToScroll: 3,
+          arrows: true,
+          prevArrow:'<i class="fa fa-arrow-left"></i>',
+          nextArrow:'<i class="fa fa-arrow-right"></i>',
+          responsive: [
+            {
+              breakpoint: 992,
+              settings: {
+                slidesToShow: 2,
+                slidesToScroll: 2,
+                
+              }
+            },
+            {
+              breakpoint: 560,
+              settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                
+              }
+            },
+          ]
+        });
+      })
+    </script>
+</body>
+</html>

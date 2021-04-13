@@ -1,0 +1,56 @@
+header{
+    .navbar{
+        @include styleText($color-black-light,$fs-1,$fw-normal);
+        .nav-link{
+            @include styleText($color-black-light,$fs-1,$fw-normal);
+        }
+    }
+    .navbar-toggler{
+        color: $color-gray-4;
+    }
+} 
+.header__left{
+    display: flex;
+    // flex-grow    
+    .navbar-brand{
+        img{
+            width: 110px;
+        }
+    }
+    .header__categories{
+        margin: 0 10px;
+        align-self: center;
+    }
+    .header__form{
+        flex-grow: 1;
+    }
+}
+
+//Responsive
+.header__right{
+    //1200px
+    @include responsive('extra-large'){
+        //code sẽ được gắn vào vị trí của @content
+        .business,.teach{
+            display: none;
+        }
+    }
+    //768px
+    @include responsive('medium'){
+        //code sẽ được gắn vào vị trí của @content
+        .udebtn-group{
+            display: none;
+        }
+    }
+}
+
+.header__left{
+      //768px
+    @include responsive('medium'){
+        //code sẽ được gắn vào vị trí của @content
+        justify-content: center;
+        .header__categories,.header__form{
+            display: none;
+        }
+    }
+}

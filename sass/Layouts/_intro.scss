@@ -1,0 +1,26 @@
+.intro{
+    background: linear-gradient(to right, $color-purple, $color-red-0);
+
+    .intro__content{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+
+        .intro__item{
+            color: $color-white-0;
+            span{
+                font-size: 47px;
+                padding-right: $pd-1;
+            }
+            b{
+                font-size: 17px;
+            }
+        }
+    }
+}
+
+.intro__item{
+    @include responsive('extra-large'){
+        text-align: center;
+    }
+}

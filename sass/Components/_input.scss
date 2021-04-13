@@ -1,0 +1,10 @@
+// xóa outline và border khi focus vào input
+.udeinp-default{
+    padding: 13px 17px;
+    border: none;
+    outline: none;
+    &:focus{
+        outline: none;
+        border: none;
+    }
+}

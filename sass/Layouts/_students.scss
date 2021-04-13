@@ -1,0 +1,19 @@
+.students{
+    .students__content{
+        margin-top: 40px;
+        margin-bottom: 40px;
+        h2{
+            @include styleText($color-black-light, $fs-2,400);
+            margin-bottom: -10px;
+        }
+        .fa-arrow-left{
+            left: -19px;
+        }
+        .fa-arrow-right{
+            right: -10px;
+        }
+        .item .item__content div span:first-child{
+            padding-right: 4px;
+        }
+    }
+}

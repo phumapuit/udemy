@@ -1,0 +1,49 @@
+.banner{
+    .banner__top-border{
+        height: 8px;
+        background: linear-gradient(to right,#6E1A52,#EC5252);
+    }
+    background-color: $color-black-0;
+    .banner__icon-row, .banner__content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 0;
+        i{
+            font-size: 32px;
+            color: $color-white-0;
+        }
+    }
+    .banner__content{
+        width: 65%;
+        margin: 0 auto;
+        .banner__text{
+            color: $color-white-0;
+            h5{
+                font-size: $fs-3;
+                margin-bottom: 16px;
+            }
+            button{
+                @include styleButton($color-red-0, $color-trans,0 ,10px,10px );
+                color: $color-white-0;
+                &:hover{
+                    @include styleHoverButton($color-red-1, $color-trans, $color-white-0);
+                }
+            }
+        }
+    }
+}
+
+@include responsive('large'){
+    .banner{
+        i{
+            display: none;
+        }
+        .banner__content{
+            .banner__text{
+                width: 90%;
+                margin: 0 auto;
+            }
+        }
+    }
+}

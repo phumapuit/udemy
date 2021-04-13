@@ -1,0 +1,39 @@
+.companies{
+    background-color: $color-white-cream;
+    padding-bottom: 24px;
+    border-bottom: 1px solid #ddd;
+    .companies__content{
+        p{
+            font-size: $fs-1;
+        }
+        .companies__logo{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin-bottom: 30px;
+        }
+    }
+    .companies__register{
+        .register__content{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-bottom: 10px;
+            .register__instructor, .register__business{
+                width: 62%;
+                margin: 0 auto;
+                a{
+                    @include styleText($color-black-0,$fs-2,$fw-bold-1);
+                }
+                p{
+                    @include styleText($color-black-0,16px, 400);
+                    padding-top: 3px;
+                }
+            }
+
+        }
+        .register__content:first-child{
+            border-right: 1px solid #ddd;
+        }
+    }
+}

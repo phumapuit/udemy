@@ -1,0 +1,124 @@
+.carousel__item{
+    position: relative;
+    .slick-arrow{
+        position: absolute;
+        z-index: 2;
+        top: 40%;
+        width: 40px;
+        height: 40px;
+        display: block;
+        line-height: 40px;
+        text-align: center;
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        border-radius: 50%;
+        background-color: $color-white-0;
+        box-shadow: 0 0 1px 1px rgba(20,23,28,.1), 0 3px 1px 0 rgba(20,23,28,.1);
+        cursor: pointer;
+        &:hover{
+            box-shadow: 0 2px 8px 2px rgba(20,23,28,.15);
+        }
+    }
+    .fa-arrow-left{
+        left: -4px;
+    }
+    .fa-arrow-right{ 
+        right: 4px;
+    }
+    
+    .item{
+        position: relative;
+        margin-top: 16px;
+        margin-right: 10px;
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        .item__header{
+            position: relative;
+            .overlay{
+                width: 100%;
+                height: 100%;
+                background-color: rgba(0, 0, 0, 0.5);
+                position: absolute;
+                top: 0;
+                left: 0;
+                opacity: 0;
+            }
+        }
+        
+        &:hover{
+            box-shadow: 0 0 1px 1px rgba(20,23,28,.1), 0 3px 1px 0 rgba(20,23,28,.1);
+            .item__header{
+                .overlay{
+                    opacity: 1;
+                }
+            }
+        }
+        .item__bestSeller{
+            background-color: $color-yellow;
+            font-size: 10px;
+            padding: 2px 5px;
+            border-radius: 0 10px 10px 0;
+            position: absolute;
+            top: 12px;
+            left: 0;
+            z-index: 2;
+        }
+        a{
+            color: $color-black-0;
+            text-decoration: none;
+            &:focus{
+            @include deleteBorder();
+            }
+        }
+        img{
+            border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+        }
+        .item__content{
+            padding: $pd-0;
+            font-size: 13px; 
+            &:focus{
+                @include deleteBorder();
+            }
+            h6{
+                font-weight: $fw-bold;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+            }
+            p{
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+            }
+            div{
+                float: right;
+                padding-right: 10px;
+                span:first-child{
+                    text-decoration: line-through;
+                    padding-right: 10px;
+                }
+                span:last-child{
+                    font-size: 17px;
+                }
+            }
+        }  
+    }        
+}
+.noBorder{
+    outline: none;
+    border: none;
+    &:focus{
+        outline: none;
+        border: none;
+    }
+}
+.top-color{
+    width: 100%;
+    height: 4px;
+    background: linear-gradient(90deg, rgb(100, 91, 83) 0%, rgb(235, 82, 82) 18.23%, rgb(247, 143, 47) 34.37%, rgb(244, 193, 81) 48.96%, rgb(82, 187, 118) 66.15%, rgb(38, 165, 215) 82.29%, rgb(224, 105, 183) 100%);
+}
+
+.gold-star{
+    color: gold;
+}
+.silver-star{
+    color: silver;
+}

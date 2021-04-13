@@ -1,0 +1,43 @@
+.udemyCarousel{
+    background-image: url('../img/cover.jpg');
+    width: 100%;
+    height: 500px;
+    background-size: cover;
+    background-position: center;
+    @include centerByFlex();
+    .udemyCarousel__content{
+        .udemyCarousel__text{
+            width: 42%;
+
+            h2{
+                @include styleText($color-white-0,$fs-4, $fw-bold-1);
+                line-height: 1.33;
+            }
+            p{
+                @include styleText($color-white-0,18px, $fw-normal);
+                line-height: 1.61;
+            }
+            input::placeholder{
+                @include styleText($color-gray-2,$fs-2,$fw-normal);
+                text-align: left;
+            }
+            .udemyCarousel__search{
+                width: 100%;
+                position: relative;
+                input{
+                    width: 100%; 
+                }
+                span{
+                    position: absolute;
+                    position: absolute;
+                    right: 15px;
+                    top: 20%;
+                    font-size: 19px;
+                    color: #ff00008f;
+                }
+            }
+            
+        }
+    }   
+    
+}
